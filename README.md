@@ -1,26 +1,23 @@
-# React-native-Navigation2
-Use  Stack-Navigation, Tab-Navigation and  Drawer-Navigation in One App
+# React-Native FlatList Infinity Scroll 
 
-## Navigation 연습. 
+## 요즘 웹이나 앱의 홈 부분 뉴스피드 형식에 자주 사용되는 무한 스크롤 기능. 플랫리스트를 이용하여 구현해 보았다
+### 데이터 State와 Props를 클래스형식이 아닌 함수형으로 코드 작성.
 
+### <FlatList>는 많은 기능이 있다.ScrollView와 같이 데이터가 화면에 벗어났을 때도 Scroll을 생성하지만, 한 번에 모든 데이터를 렌더링하지 않고 화면에 보여지는 부분(혹은 설정한 수만큼의 데이터)만 렌더링한다는 차이가 있다.
 
-### 스크린, 네비게이션 폴더를 생성하여 구조를 만들었다.
-![제목 없음](https://user-images.githubusercontent.com/78295968/132785870-c07d093f-82c8-4b62-ab76-938933df1e82.png)
-
-
-
-이렇게 만들면 구조도 편리하고 각각 모듈의 코드가 간결화되어 보기 좋고 가독성이 올라간다.
+> React-Native공식 문서를 참조하여 기본 FlatList 코드 작성 후 
 
 
-## 첫 화면
+> 원하는 무한 스크롤 기능 구현을 위해  
+> const onEndReached = () => { 함수 작성. 이프문을 돌려 로딩중엔 리턴, else getData함수 호출하여 끊임 없이 스크롤 가능하게 함.
 
 
-예뻐보이기 위해 색깔을 넣었다.
-### Home Screen
-![Screenshot_1631240390](https://user-images.githubusercontent.com/78295968/132788730-f34df032-902b-48ec-ac0b-9333d15f273f.png)
-### About Screen
-![Screenshot_1631240450](https://user-images.githubusercontent.com/78295968/132788829-c6fcd414-6a06-44a8-bbc0-0e8910b77d73.png)
-### contact Screen
-![Screenshot_1631238460](https://user-images.githubusercontent.com/78295968/132787224-c51b5aa3-6c4f-4972-844b-7396b7e2b895.png)
-### Drawer Navigation
-![Screenshot_1631240593](https://user-images.githubusercontent.com/78295968/132791777-8a6847f0-b28e-45bc-ba9c-2b2c06f1f4ec.png)
+## 스크롤 맨 밑으로 갔으나 더 이상 화면이 보이지 않음.
+![Screenshot_1631523311](https://user-images.githubusercontent.com/78295968/133054700-375af270-2024-41a6-be4e-137da2c28223.png)
+
+
+
+## onEndReached함수를 통해 계속 getData함수 호출 ->무한 스크롤
+![Screenshot_1631523320](https://user-images.githubusercontent.com/78295968/133055709-4b276f7c-1bc1-4e0b-a3f6-c3e14737751a.png)
+
+  
