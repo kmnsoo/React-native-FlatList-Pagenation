@@ -1,12 +1,18 @@
 // ./screens/Contact.js
 
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, FlatList, Image } from "react-native";
+
+
 
 const Contact = () => {
+
+
+
   return (
     <View style={styles.center}>
-      <Text>This is the contact screen</Text>
+      {/* <Text>This is the contact screen</Text> */}
+     
     </View>
   );
 };

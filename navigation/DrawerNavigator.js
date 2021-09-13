@@ -16,11 +16,13 @@ const screenOptionStyle = {
   headerBackTitle: "Back",
 };
 
+
+
 const DrawerNavigator = () => {
   return (
-    <Drawer.Navigator  screenOptions={screenOptionStyle} >
-      <Drawer.Screen name="Home" component={TabNavigator} />
-      <Drawer.Screen name="Contact" component={ContactStackNavigator} />
+    <Drawer.Navigator  screenOptions={screenOptionStyle}>
+      <Drawer.Screen name="Home Screen" component={TabNavigator} />
+      <Drawer.Screen name="Contact Screen" component={ContactStackNavigator} />
     </Drawer.Navigator>
   );
 }

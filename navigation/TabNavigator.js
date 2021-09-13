@@ -14,7 +14,7 @@ const BottomTabNavigator = () => {
         headerShown: false,
         tabBarActiveTintColor: '#e91e63',
       }}>
-      <Tab.Screen name="Home" component={MainStackNavigator}
+      <Tab.Screen name="Main" component={MainStackNavigator}
       options={{
         tabBarLabel: 'Home',
         tabBarIcon: ({ color, size }) => (
@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
       }}/>
       <Tab.Screen name="Contact" component={ContactStackNavigator}
       options={{
-        tabBarLabel: 'Updates',
+        tabBarLabel: 'Contact',
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="bell" color={color} size={size} />
         ),
